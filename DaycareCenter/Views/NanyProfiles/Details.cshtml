@@ -1,0 +1,60 @@
+﻿@model DaycareCenter.Models.NanyProfile
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NanyProfile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nany_Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nany_Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nany_Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nany_Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NAge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NAge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NGender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NGender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NReligion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NReligion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NAddress)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Nany_Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

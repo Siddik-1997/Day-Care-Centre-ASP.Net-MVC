@@ -1,0 +1,42 @@
+﻿@model DaycareCenter.Models.NanySchedule
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NanySchedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Schedule_Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Schedule_Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Shift_Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Shift_Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nany_Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nany_Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Child_Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Child_Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Schedule_Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
